@@ -1,0 +1,80 @@
+:root {
+  --grey: rgb(35, 35, 35);
+  --obsidian: rgb(30, 30 ,30); 
+  --white: rgb(222, 222, 222);
+}
+
+body {
+  background-color: var(--grey);
+  min-width: 300px;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  background-color: var(--obsidian);
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+#navbar ul {
+  font-size: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+}
+
+/* Navigation bar text stays in the middle of screen */
+#navbar li {
+  display: inline-block;
+  padding: 0 100 0 100;
+}
+
+/* Text stays white when clicked on */
+#navbar a, a:visited, a:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Underlines the text when hovering over */
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* INTRODUCTION SECTION */
+
+#welcome-section {
+  position: absolute;
+  top: 50px;
+  color: var(--white);
+  font-family: Montsserat, Sans-serif;
+}
+
+/* END OF INTRODUCTION SECTION */
+
+/* PROJECT SECTION */
+
+#projects {
+  position: fixed;
+  top: 150px;
+  color: var(--white);
+  font-family: Montsserat, Sans-serif;
+}
+
+/* END OF PROJECT SECTION */
+
+/* CONTACT SECTION */
+
+#contact {
+  position: fixed;
+  top: 300px;
+  color: var(--white);
+  font-family: Montsserat, Sans-serif;
+}
+
+/* END OF CONTACT SECTION */
