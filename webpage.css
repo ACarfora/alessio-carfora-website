@@ -2,58 +2,62 @@
   --grey: rgb(35, 35, 35);
   --obsidian: rgb(30, 30 ,30); 
   --white: rgb(222, 222, 222);
+  --aquamarine: rgb(127, 255, 212);
 }
 
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-color: var(--grey);
-  min-width: 300px;
 }
 
 /* NAVIGATION BAR */
-.navbar-wrapper {
+header {
   display: flex;
-  position: sticky;
-  background-color: var(--obsidian);
-  font-family: Roboto, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
 
 .name {
-  position: absolute;
-  left: auto;
-  color: var(--white);
-  font-family: Montsserat, Sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-}
-
-#navbar ul {
-  font-size: 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  list-style: none;
-}
-
-/* Navigation bar text stays in the middle of screen */
-#navbar li {
-  display: inline-block;
-  padding: 0 100 0 100;
-}
-
-/* Text stays white when clicked on */
-#navbar a, a:visited, a:active {
+  font-size: 16px;
   color: var(--white);
   text-decoration: none;
 }
 
-/* Underlines the text when hovering over */
-#navbar a:hover {
-  text-decoration: underline;
+h1:hover {
+  cursor: default;
 }
 
-.social-links {
-  position: absolute;
-  right: 0;
+#navbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.nav-links {
+  list-style: none;  
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: var(--aquamarine);
+}
+
+a:link, a:active, a:visited {
   color: var(--white);
-  font-family: Montsserat, Sans-serif;
 }
 
 /* END OF NAVIGATION BAR */
