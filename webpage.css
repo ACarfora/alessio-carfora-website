@@ -17,7 +17,13 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-
+.name {
+  position: absolute;
+  left: auto;
+  color: var(--white);
+  font-family: Montsserat, Sans-serif;
+  font-weight: 300;
+}
 
 #navbar ul {
   font-size: 20px;
@@ -41,6 +47,13 @@ body {
 /* Underlines the text when hovering over */
 #navbar a:hover {
   text-decoration: underline;
+}
+
+.social-links {
+  position: absolute;
+  right: 0;
+  color: var(--white);
+  font-family: Montsserat, Sans-serif;
 }
 
 /* END OF NAVIGATION BAR */
