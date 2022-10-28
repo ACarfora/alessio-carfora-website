@@ -25,11 +25,10 @@ header {
   font-weight: 300;
   font-size: 16px;
   color: var(--white);
-  text-decoration: none;
 }
 
-h1:hover {
-  cursor: default;
+.logo-name {
+  text-decoration: none;  
 }
 
 #navbar {
@@ -58,6 +57,20 @@ h1:hover {
 
 a:link, a:active, a:visited {
   color: var(--white);
+}
+
+.social-links {
+  font-size: 25px;
+}
+
+.fa {
+  padding: 30px;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: var(--aquamarine);
+  transition: all 0.3s ease 0s;
 }
 
 /* END OF NAVIGATION BAR */
