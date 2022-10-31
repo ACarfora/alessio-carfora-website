@@ -5,61 +5,66 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet"  type="text/css" href="/webpage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
   <title>Personal Portfolio Page</title>
 <!--NAVIGATION BAR-->
   <header>
     <div class="name"><a href="#home" class="logo-name"><h1>Alessio Carfora</h1></a></div>
-
     <nav id="navbar">
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
       </ul> 
     </nav>
 
     <div class="social-links">
       <a class ="fa fa-linkedin" id="profile-link" target="_blank" href="https://www.linkedin.com/in/alessio-carfora-05a927158/"></a>
       <a class="fa fa-github" id="profile-link" target="_blank" href="https://github.com/ACarfora"></a>
+      <a class ="fa fa-google" id="profile-link" target="_blank" href="mailto:alessio.carfora@alessiocarfora.com"></a>
     </div> 
   </header> 
 <!--END OF NAVIGATION BAR-->
 
 <!--HOME SECTION-->
+  <section id="home">
+    <p class="introduction">Hello World!</p>
+  </section>  
 <!--END OF HOME SECTION--> 
 
 <!--PROJECT SECTION-->
   <section id="projects">
     <div class="project-section-header">
-      <h2>Personal Projects</h2>
+      <h2>Project Section</h2>
     </div>
     <div class="project-grid">
-      <a class="project-tile" target="_blank"></a>
-      <a class="project-tile" target="_blank"></a>
-      <a class="project-tile" target="_blank"></a>
-      <a class="project-tile" target="_blank"></a>
-      <a class="project-tile" target="_blank"></a>
+      <figure class="project-item project-item-1">
+          <img src="https://images.pexels.com/photos/3530058/pexels-photo-3530058.jpeg" alt="project-image-1"class="project-image">
+      </figure>
+      <figure class="project-item project-item-2">
+        <img src="https://images.pexels.com/photos/3530058/pexels-photo-3530058.jpeg" alt="project-image-2"class="project-image">
+      </figure>
+      <figure class="project-item project-item-3">
+        <img src="https://images.pexels.com/photos/3530058/pexels-photo-3530058.jpeg" alt="project-image-3"class="project-image">
+      </figure>
     </div>
   </section>
 <!--END OF PROJECT SECTION-->     
 
-<!--CONTACT SECTION-->
-  <section id="contact">
-    <div class="contact-section-header">
-      <h3 >Get in touch with me</h3>
-    </div>
-    <div class="contact-links">
-      <!--LinkedIn Profile-->
-      <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/alessio-carfora-05a927158/">LinkedIn</a>
-      <!--GitHub Profile-->
-      <a id="profile-link" target="_blank" href="https://github.com/ACarfora">GitHub</a>
+<!--ABOUT SECTION-->
+  <section id="about">
+    <div class="about">
+      <h3>About Section</h3>
     </div>
   </section>
-<!--END OF CONTACT SECTION-->   
+<!--END OF ABOUT SECTION--> 
+
+<!--FOOTER SECTION-->
+  <p class="footer">2022 - Alessio Carfora</p>
+<!--END OF FOOTER SECTION-->
 </body>
 </html>
