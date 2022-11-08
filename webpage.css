@@ -147,6 +147,13 @@ h2 {
   grid-row-end: 2;
 }
 
+.project-item-4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 /* END OF PROJECT SECTION */
 
 /* ABOUT SECTION */
