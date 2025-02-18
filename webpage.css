@@ -5,186 +5,132 @@
   --aquamarine: rgb(127, 255, 212);
 }
 
+
+/* GENERAL STYLING */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--grey);
+  box-sizing: border-box;
 }
 
-/* NAVIGATION BAR */
-header {
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--obsidian);
+  color: var(--white);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.name {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* SIDEBAR - LEFT SIDE - STATIC */
+.sidebar {
+  width: 30%;
+  max-width: 300px;
+  background-color: var(--obsidian);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+border-right: 2px solid var(--grey);
+}
+
+/* NAME + NAV */
+.sidebar h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
   color: var(--white);
 }
 
 .logo-name {
-  text-decoration: none;  
-}
-
-#navbar {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .nav-links {
-  list-style: none;  
+  list-style: none;
+  margin-top: 30px;
 }
 
-.nav-links li {
-  display: inline-block;
-  padding: 0px 25px;
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
+.nav-links a {
   text-decoration: none;
+  color: var(--white);
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-links a:hover {
   color: var(--aquamarine);
 }
 
-a:link, a:active, a:visited {
+/* SOCIAL LINKS */
+.social-links a {
   color: var(--white);
-}
-
-.social-links {
-  font-size: 25px;
-}
-
-.fa {
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 20px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
-.fa:hover {
+.social-links a:hover {
   color: var(--aquamarine);
-  transition: all 0.3s ease 0s;
 }
 
-/* END OF NAVIGATION BAR */
-
-/* HOME SECTION */
-
-#home {
-  position: fixed;
-  width: 100%;
-  padding-left: 200px;
-  padding-right: 250px;
-  text-align: left;
-  top: 150px;
-  color: var(--white);
-  font-weight: 300;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+/* MAIN - RIGHT SIDE - SCROLLABLE */
+.content {
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  padding: 50px;
+  height: 100vh;
+  overflow-y: auto; /* allow scrolling */
 }
-/* END OF HOME SECTION */
 
-/* PROJECT SECTION */
-
-#projects {
-  position: fixed;
-  top: 260px;
-  width: 100%;
-  padding-left: 200px;
-  padding-right: 250px;
-  text-align: left;
+/* SECTION STYLING */
+section {
+  margin-bottom: 50px;
 }
 
 h2 {
+  font-size: 1.8rem;
   color: var(--white);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.project-grid {
-  display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-}
-
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.project-item-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.project-item-3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.project-item-4 {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-/* END OF PROJECT SECTION */
-
-/* ABOUT SECTION */
-
-#about {
-  position: fixed;
-  top: 600px;
-  width: 100%;
-  padding-left: 200px;
-  padding-right: 250px;
-}
-
-h3 {
-  text-align: left;
+p {
+  font-size: 1.8rem;
   color: var(--white);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+  line-height: 1.6;
 }
 
-/* END OF ABOUT SECTION */
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    position: relative;
+    border-right: none;
+    text-align: center;
+  }
 
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 
-/* FOOTER SECTION */
-.footer {
-  position: fixed;
-  top: 700px;
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  font-size: 12px;
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
 }
