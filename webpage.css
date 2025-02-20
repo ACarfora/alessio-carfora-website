@@ -94,7 +94,7 @@ body {
   width: 100%;
   max-width: 700px;
   text-align: left;
-  margin-top: 50px; 
+  margin-top: 30px; 
 }
 
 /* section */
@@ -110,7 +110,34 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--white);
   line-height: 1.6;
+}
+
+/* responsive - smaller displays */
+@media (max-width: 768px) {  
+  
+  .header {
+    align-items: left;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
