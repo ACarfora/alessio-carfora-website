@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Merriweather', serif;
   background-color: var(--obsidian);
@@ -138,6 +142,7 @@ code, pre {
 /* section */
 section {
   margin-bottom: 50px;
+  scroll-margin-top: 150px;
 }
 
 h2 {
