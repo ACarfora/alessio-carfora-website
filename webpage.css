@@ -191,6 +191,34 @@ p {
   margin-top: 10px;
 }
 
+/* courses */
+.course-list p {
+  margin-bottom: 15px;
+}
+
+.course-list ol { 
+  list-style-type: square;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column ;
+  gap: 20px;
+}
+
+.course-list a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.course-list a:hover {
+  color: var(--blue);
+}
+
+.course-list a i {
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
 /* footer */
 .footer p {
   font-size: 0.75rem;
@@ -231,6 +259,14 @@ p {
   .project-thumbnail img {
     width: 250px;
     height: 150px;
+  }
+
+  .course-list ol {
+    font-size: 0.85rem;
+  }
+
+  .course-list a i {
+    font-size: 0.7rem;
   }
 }
 
